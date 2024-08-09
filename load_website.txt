@@ -1,0 +1,16 @@
+from root
+
+cargo build
+
+cd backend
+cargo run
+
+cd.. cd frontend
+cargo build
+wasm-pack build --target web
+
+mv pkg /public
+
+cd public
+python3 -m http.server 8080
+
