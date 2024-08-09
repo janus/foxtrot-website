@@ -1,0 +1,12 @@
+[package]
+name = "foxtrot-backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.0"
+juniper = "0.15"
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = "1.0.122"
+dotenv = "0.15"
+tokio = { version = "1.0", features = ["full"] }
